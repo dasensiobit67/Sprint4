@@ -1,0 +1,24 @@
+{
+  "name": "noderestnivell3",
+  "version": "1.0.0",
+  "description": "Node Rest Server Multer Upload img",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "keywords": [
+    "node",
+    "multer",
+    "rest",
+    "server",
+    "api",
+    "upload"
+  ],
+  "author": "Dani Asensio",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1",
+    "multer": "^1.4.2"
+  }
+}
