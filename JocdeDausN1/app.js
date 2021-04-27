@@ -9,6 +9,12 @@ const routes = require('./controllers/routes')
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
 
+// Middleware de control de errores Express
+app.use((err,req,res,next)=>{
+    console.log("Error:"+err.stack)
+    res.status(500).send({message:"Error del Servidor"})
+})
+
 routes(app);
 
 // Start the server
